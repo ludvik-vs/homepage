@@ -30,10 +30,24 @@ body {
     justify-content: space-between;
 }
 
+.fhc {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
 .fv {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+}
+
+.fvc {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .resume {
@@ -61,10 +75,6 @@ body {
         align-items: center;
     }
 
-    .contact-info__block:not(:last-child) {
-        margin-bottom: 20px;
-    }
-
     .experiences {
         margin-right: 0;
     }
@@ -86,28 +96,28 @@ body {
 
 .contact-info__sub-header {
     color: var(--secondary-text-color);
-    margin-bottom: 30px;
 }
 
 .contact-info__block {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
+    gap: 10px 0;
 }
 
 .contact-info__block--center {
     justify-content: center;
+    padding: 10px 0;
 }
 
 .contact-info__item {
     color: var(--secondary-text-color);
     text-decoration: none;
     display: flex;
-    justify-content: start;
-}
-
-.contact-info__item:not(:last-child) {
-    margin-bottom: 20px;
+    justify-content: center;
+    align-items: center;
 }
 
 .contact-info__item-icon-wrapper {
@@ -161,6 +171,11 @@ body {
 .intro_text {
     color: var(--secondary-text-color);
     text-align: justify;
+    padding: 20px 0;
+}
+
+.skills{
+    margin-bottom: 30px;
 }
 
 .skills__header {
